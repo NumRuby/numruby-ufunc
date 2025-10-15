@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "ufunc/version"
+require_relative 'ufunc/version'
 
 module Numruby
   module Ufunc
