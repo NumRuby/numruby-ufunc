@@ -3,8 +3,11 @@ require 'spec_helper'
 RSpec.describe NumRuby::UFunc::Registry do
   it 'has all expected ufuncs registered' do
     expected = %i[
-      absolute add arccos arcsin arctan ceil cos cosh divide exp exp2 floor hypot log log2
-      log10 maximum minimum multiply pow rint sign sin sinh sqrt subtract tan tanh trunc
+      absolute add arccos arcsin arctan cbrt ceil conj conjugate cos cosh divide divmod
+      exp exp2 expm1 fabs floor floor_divide float_power fmod gcd heaviside hypot lcm
+      log log1p log2 log10 logaddexp logaddexp2 matmul maximum minimum mod multiply
+      negative positive power pow reciprocal remainder rint sign sin sinh square sqrt
+      subtract tan tanh true_divide trunc
     ]
 
     registered = described_class.ufuncs.keys
