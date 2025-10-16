@@ -13,9 +13,5 @@ require_relative 'ufunc/delegators'
 
 module NumRuby
   module UFunc
-    # Optional: generic call interface
-    def self.call(name, *)
-      Registry.call(name, *)
-    end
   end
 end
