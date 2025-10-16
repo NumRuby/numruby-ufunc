@@ -83,12 +83,12 @@
 
 | ✅ | Ufunc Name      | Human Name                         | Description                                                                                         |
 | -- | --------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [] | `bitwise_and`   | Bitwise AND                        | Performs bitwise AND operation on corresponding elements.                                           |
-| [] | `bitwise_or`    | Bitwise OR                         | Performs bitwise OR operation on corresponding elements.                                            |
-| [] | `bitwise_xor`   | Bitwise XOR                        | Performs bitwise XOR operation on corresponding elements.                                           |
-| [] | `invert`        | Bitwise NOT                        | Performs bitwise NOT operation on each element. alias: `bitwise_not`                                |
-| [] | `left_shift`    | Left Shift                         | Shifts the bits of each element to the left.                                                        |
-| [] | `right_shift`   | Right Shift                        | Shifts the bits of each element to the right.                                                       |
+| ✅ | `bitwise_and`   | Bitwise AND                        | Performs bitwise AND operation on corresponding elements.                                           |
+| ✅ | `bitwise_or`    | Bitwise OR                         | Performs bitwise OR operation on corresponding elements.                                            |
+| ✅ | `bitwise_xor`   | Bitwise XOR                        | Performs bitwise XOR operation on corresponding elements.                                           |
+| ✅ | `invert`        | Bitwise NOT                        | Performs bitwise NOT operation on each element. alias: `bitwise_not`                                |
+| ✅ | `left_shift`    | Left Shift                         | Shifts the bits of each element to the left.                                                        |
+| ✅ | `right_shift`   | Right Shift                        | Shifts the bits of each element to the right.                                                       |
 
 ### Comparison functions
 
