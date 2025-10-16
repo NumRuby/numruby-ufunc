@@ -94,38 +94,38 @@
 
 | ✅ | Ufunc Name      | Human Name                         | Description                                                                                         |
 | -- | --------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [] | `greater`       | Greater Than                       | Checks if elements of one array are greater than the corresponding elements of another.             |
-| [] | `greater_equal` | Greater Than or Equal              | Checks if elements of one array are greater than or equal to the corresponding elements of another. |
-| [] | `less`          | Less Than                          | Checks if elements of one array are less than the corresponding elements of another.                |
-| [] | `less_equal`    | Less Than or Equal                 | Checks if elements of one array are less than or equal to the corresponding elements of another.    |
-| [] | `not_equal`     | Not Equal                          | Checks element-wise inequality between two arrays.                                                  |
-| [] | `equal`         | Equal                              | Checks element-wise equality between two arrays.                                                    |
-| [] | `logical_and`   | Logical AND                        | Performs element-wise logical AND operation.                                                        |
-| [] | `logical_or`    | Logical OR                         | Performs element-wise logical OR operation.                                                         |
-| [] | `logical_xor`   | Logical XOR                        | Performs element-wise logical XOR operation.                                                        |
-| [] | `logical_not`   | Logical NOT                        | Performs element-wise logical NOT operation.                                                        |
+| ✅ | `greater`       | Greater Than                       | Checks if elements of one array are greater than the corresponding elements of another.             |
+| ✅ | `greater_equal` | Greater Than or Equal              | Checks if elements of one array are greater than or equal to the corresponding elements of another. |
+| ✅ | `less`          | Less Than                          | Checks if elements of one array are less than the corresponding elements of another.                |
+| ✅ | `less_equal`    | Less Than or Equal                 | Checks if elements of one array are less than or equal to the corresponding elements of another.    |
+| ✅ | `not_equal`     | Not Equal                          | Checks element-wise inequality between two arrays.                                                  |
+| ✅ | `equal`         | Equal                              | Checks element-wise equality between two arrays.                                                    |
+| ✅ | `logical_and`   | Logical AND                        | Performs element-wise logical AND operation.                                                        |
+| ✅ | `logical_or`    | Logical OR                         | Performs element-wise logical OR operation.                                                         |
+| ✅ | `logical_xor`   | Logical XOR                        | Performs element-wise logical XOR operation.                                                        |
+| ✅ | `logical_not`   | Logical NOT                        | Performs element-wise logical NOT operation.                                                        |
 | ✅ | `maximum`       | Maximum                            | Returns the maximum of two arrays element-wise.                                                     |
 | ✅ | `minimum`       | Minimum                            | Returns the minimum of two arrays element-wise.                                                     |
-| [] | `fmax`          | Maximum (ignoring NaNs)            | Returns the maximum of two arrays, ignoring NaNs.                                                   |
-| [] | `fmin`          | Minimum (ignoring NaNs)            | Returns the minimum of two arrays, ignoring NaNs.                                                   |
+| ✅ | `fmax`          | Maximum (ignoring NaNs)            | Returns the maximum of two arrays, ignoring NaNs.                                                   |
+| ✅ | `fmin`          | Minimum (ignoring NaNs)            | Returns the minimum of two arrays, ignoring NaNs.                                                   |
 
 ### Floating functions
 
 | ✅ | Ufunc Name      | Human Name                         | Description                                                                                         |
 | -- | --------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [] | `isfinite`      | Finite Check                       | Checks if each element is finite (not NaN, inf, or -inf).                                           |
-| [] | `isinf`         | Infinite Check                     | Checks if each element is infinite.                                                                 |
-| [] | `isnan`         | NaN Check                          | Checks if each element is NaN.                                                                      |
+| ✅ | `isfinite`      | Finite Check                       | Checks if each element is finite (not NaN, inf, or -inf).                                           |
+| ✅ | `isinf`         | Infinite Check                     | Checks if each element is infinite.                                                                 |
+| ✅ | `isnan`         | NaN Check                          | Checks if each element is NaN.                                                                      |
 | ✅ | `isnat`         | Is “Not a Time”                    | Returns a boolean array indicating which datetime64 or timedelta64 values are `NaT` (“Not a Time”). |
-| [] | `fabs`          | Absolute Value                     | NOTE: also listed in Math above. Compute the absolute values element-wise.                          |
-| [] | `signbit`       | Sign Bit                           | Checks if the sign bit of each element is set.                                                      |
-| [] | `copysign`      | Copy Sign                          | Copies the sign of one array to another.                                                            |
-| [] | `nextafter`     | Next Floating Point                | Returns the next floating-point value after each element.                                           |
+| ✅ | `fabs`          | Absolute Value                     | NOTE: also listed in Math above. Compute the absolute values element-wise.                          |
+| ✅ | `signbit`       | Sign Bit                           | Checks if the sign bit of each element is set.                                                      |
+| ✅ | `copysign`      | Copy Sign                          | Copies the sign of one array to another.                                                            |
+| ✅ | `nextafter`     | Next Floating Point                | Returns the next floating-point value after each element.                                           |
 | ✅ | `spacing`       | Floating-point spacing             | Returns the distance between `x` and the next representable floating-point value.                   |
 | ✅ | `modf`          | Fractional and integral parts      | Splits each element into its fractional and integer parts, both with the same sign as the input.    |
 | ✅ | `ldexp`         | Multiply by power of two           | Computes `x * 2**i` element-wise. Used for efficient scaling by powers of two.                      |
 | ✅ | `frexp`         | Fraction and exponent              | Decomposes `x` into mantissa and exponent such that `x = mantissa * 2**exponent`.                   |
-| [] | `frexp`         | Decompose to Mantissa and Exponent | Decomposes each element into mantissa and exponent.                                                 |
+| ✅ | `frexp`         | Decompose to Mantissa and Exponent | Decomposes each element into mantissa and exponent.                                                 |
 | ✅ | `floor`         | Floor                              | Returns the largest integer less than or equal to each element.                                     |
 | ✅ | `ceil`          | Ceiling                            | Returns the smallest integer greater than or equal to each element.                                 |
 | ✅ | `trunc`         | Truncate                           | Truncates each element to the nearest integer towards zero.                                         |
