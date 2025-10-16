@@ -6,35 +6,11 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-Layout/EmptyLineAfterGuardClause:
-  Exclude:
-    - 'lib/numruby/ufunc.rb'
-    - 'lib/numruby/ufunc/registry.rb'
-
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: AllowForAlignment, EnforcedStyleForExponentOperator, EnforcedStyleForRationalLiterals.
-# SupportedStylesForExponentOperator: space, no_space
-# SupportedStylesForRationalLiterals: space, no_space
-Layout/SpaceAroundOperators:
-  Exclude:
-    - 'lib/numruby/ufunc/exp2.rb'
-    - 'lib/numruby/ufunc/pow.rb'
-
-# Offense count: 4
-# This cop supports safe autocorrection (--autocorrect).
-Lint/AmbiguousOperatorPrecedence:
-  Exclude:
-    - 'lib/numruby/ufunc/hypot.rb'
-    - 'spec/numruby/ufunc/hypot_spec.rb'
-
 # Offense count: 1
 # This cop supports unsafe autocorrection (--autocorrect-all).
 Lint/RedundantDirGlobSort:
   Exclude:
-    - 'lib/numruby/ufunc.rb'
+    - "lib/numruby/ufunc.rb"
 
 # Offense count: 1
 # Configuration parameters: ExpectMatchingDefinition, CheckDefinitionPathHierarchy, CheckDefinitionPathHierarchyRoots, Regex, IgnoreExecutableScripts, AllowedAcronyms.
@@ -42,8 +18,8 @@ Lint/RedundantDirGlobSort:
 # AllowedAcronyms: CLI, DSL, ACL, API, ASCII, CPU, CSS, DNS, EOF, GUID, HTML, HTTP, HTTPS, ID, IP, JSON, LHS, QPS, RAM, RHS, RPC, SLA, SMTP, SQL, SSH, TCP, TLS, TTL, UDP, UI, UID, UUID, URI, URL, UTF8, VM, XML, XMPP, XSRF, XSS
 Naming/FileName:
   Exclude:
-    - 'Rakefile.rb'
-    - 'lib/numruby-ufunc.rb'
+    - "Rakefile.rb"
+    - "lib/numruby-ufunc.rb"
 
 # Offense count: 74
 # Configuration parameters: MinNameLength, AllowNamesEndingInNumbers, AllowedNames, ForbiddenNames.
@@ -57,17 +33,17 @@ Naming/MethodParameterName:
 # AllowedIdentifiers: TLS1_1, TLS1_2, capture3, iso8601, rfc1123_date, rfc822, rfc2822, rfc3339, x86_64
 Naming/VariableNumber:
   Exclude:
-    - 'lib/numruby/ufunc/exp2.rb'
-    - 'lib/numruby/ufunc/log10.rb'
-    - 'lib/numruby/ufunc/log2.rb'
-    - 'spec/numruby/ufunc/registry_spec.rb'
+    - "lib/numruby/ufunc/exp2.rb"
+    - "lib/numruby/ufunc/log10.rb"
+    - "lib/numruby/ufunc/log2.rb"
+    - "spec/numruby/ufunc/registry_spec.rb"
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
 # Configuration parameters: IncludeActiveSupportAliases.
 Performance/DoubleStartEndWith:
   Exclude:
-    - 'lib/numruby/ufunc.rb'
+    - "lib/numruby/ufunc.rb"
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
@@ -75,7 +51,7 @@ Performance/DoubleStartEndWith:
 # SupportedStyles: be, be_nil
 RSpec/BeNil:
   Exclude:
-    - 'spec/numruby_ufunc_spec.rb'
+    - "spec/numruby_ufunc_spec.rb"
 
 # Offense count: 5
 # This cop supports unsafe autocorrection (--autocorrect-all).
@@ -83,9 +59,9 @@ RSpec/BeNil:
 # SupportedStyles: described_class, explicit
 RSpec/DescribedClass:
   Exclude:
-    - 'spec/numruby/ufunc/registry_spec.rb'
-    - 'spec/numruby/ufunc/version_spec.rb'
-    - 'spec/numruby_ufunc_spec.rb'
+    - "spec/numruby/ufunc/registry_spec.rb"
+    - "spec/numruby/ufunc/version_spec.rb"
+    - "spec/numruby_ufunc_spec.rb"
 
 # Offense count: 32
 # Configuration parameters: CustomTransform, IgnoreMethods, IgnoreMetadata.
@@ -100,16 +76,16 @@ RSpec/SpecFilePathFormat:
 # RedundantBlockArgumentNames: blk, block, proc
 Style/ArgumentsForwarding:
   Exclude:
-    - 'lib/numruby-ufunc.rb'
-    - 'lib/numruby/ufunc.rb'
-    - 'lib/numruby/ufunc/registry.rb'
+    - "lib/numruby-ufunc.rb"
+    - "lib/numruby/ufunc.rb"
+    - "lib/numruby/ufunc/registry.rb"
 
 # Offense count: 2
 # This cop supports unsafe autocorrection (--autocorrect-all).
 Style/MinMaxComparison:
   Exclude:
-    - 'lib/numruby/ufunc/maximum.rb'
-    - 'lib/numruby/ufunc/minimum.rb'
+    - "lib/numruby/ufunc/maximum.rb"
+    - "lib/numruby/ufunc/minimum.rb"
 
 # Offense count: 1
 # This cop supports unsafe autocorrection (--autocorrect-all).
@@ -117,13 +93,13 @@ Style/MinMaxComparison:
 # SupportedStyles: literals, strict
 Style/MutableConstant:
   Exclude:
-    - 'lib/numruby/ufunc/version.rb'
+    - "lib/numruby/ufunc/version.rb"
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
 Style/NestedTernaryOperator:
   Exclude:
-    - 'lib/numruby/ufunc/sign.rb'
+    - "lib/numruby/ufunc/sign.rb"
 
 # Offense count: 2
 # This cop supports unsafe autocorrection (--autocorrect-all).
@@ -131,8 +107,8 @@ Style/NestedTernaryOperator:
 # SupportedStyles: predicate, comparison
 Style/NumericPredicate:
   Exclude:
-    - 'spec/**/*'
-    - 'lib/numruby/ufunc/sign.rb'
+    - "spec/**/*"
+    - "lib/numruby/ufunc/sign.rb"
 
 # Offense count: 70
 # This cop supports safe autocorrection (--autocorrect).

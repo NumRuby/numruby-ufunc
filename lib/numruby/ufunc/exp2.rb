@@ -13,7 +13,7 @@ module NumRuby
   module UFunc
     module Exp2
       def self.call(x)
-        x.map { |a| 2 ** a }
+        x.map { |a| 2**a }
       end
     end
   end

@@ -14,7 +14,7 @@ module NumRuby
   module UFunc
     module Hypot
       def self.call(x, y)
-        Numo::DFloat[x.to_a.zip(y.to_a).map { |a, b| Math.sqrt(a**2 + b**2) }]
+        Numo::DFloat[x.to_a.zip(y.to_a).map { |a, b| Math.sqrt((a**2) + (b**2)) }]
       end
     end
   end

@@ -13,6 +13,7 @@ module NumRuby
         def call(name, *args)
           mod = @ufuncs[name.to_sym]
           raise ArgumentError, "Unknown ufunc: #{name}" unless mod
+
           mod.call(*args)
         end
       end

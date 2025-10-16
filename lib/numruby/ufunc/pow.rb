@@ -14,7 +14,7 @@ module NumRuby
   module UFunc
     module Pow
       def self.call(x, y)
-        x ** y
+        x**y
       end
     end
   end
