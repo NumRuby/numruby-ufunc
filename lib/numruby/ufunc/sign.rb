@@ -14,10 +14,10 @@ module NumRuby
     module Sign
       def self.call(x)
         x.map do |a|
-          if a < 0
+          if a.negative?
             -1
           else
-            a > 0 ? 1 : 0
+            a.positive? ? 1 : 0
           end
         end
       end

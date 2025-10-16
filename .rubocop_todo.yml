@@ -45,15 +45,6 @@ RSpec/DescribedClass:
 RSpec/SpecFilePathFormat:
   Enabled: false
 
-# Offense count: 2
-# This cop supports unsafe autocorrection (--autocorrect-all).
-# Configuration parameters: EnforcedStyle, AllowedMethods, AllowedPatterns.
-# SupportedStyles: predicate, comparison
-Style/NumericPredicate:
-  Exclude:
-    - "spec/**/*"
-    - "lib/numruby/ufunc/sign.rb"
-
 # Offense count: 70
 # This cop supports safe autocorrection (--autocorrect).
 # Configuration parameters: EnforcedStyle, ConsistentQuotesInMultiline.
