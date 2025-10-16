@@ -20,7 +20,7 @@
 | ⚠️ | `subtract`      | Subtraction                        | Subtracts corresponding elements of two arrays.                                                     |
 | ✅ | `multiply`      | Multiplication                     | Multiplies corresponding elements of two arrays.                                                    |
 | [] | `matmul`        | TODO                               | TODO                                                                                                |
-| ⚠️ | `divide`        | Division                           | Divides corresponding elements of two arrays.                                                       |
+| ✅ | `divide`        | Division                           | Divides corresponding elements of two arrays.                                                       |
 | [] | `logaddexp`     | TODO                               | TODO                                                                                                |
 | [] | `logaddexp2`    | TODO                               | TODO                                                                                                |
 | [] | `true_divide`   | True Division                      | Divides corresponding elements of two arrays, returning float results.                              |
