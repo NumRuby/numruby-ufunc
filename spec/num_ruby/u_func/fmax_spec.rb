@@ -84,15 +84,15 @@ RSpec.describe NumRuby::UFunc::Fmax do
       expect(diff.max).to be < 1e-12
     end
   end
-end
 
-RSpec.describe 'NumRuby.fmax' do
-  it 'delegates to Fmax.call' do
-    x = Numo::DFloat[1, Float::NAN, 3]
-    y = Numo::DFloat[2, 2, Float::NAN]
-    result = NumRuby.fmax(x, y)
-    expected = Numo::DFloat[2, 2, 3]
-    diff = (result - expected).abs
-    expect(diff.max).to be < 1e-12
+  describe 'NumRuby.fmax' do
+    it 'delegates to Fmax.call' do
+      x = Numo::DFloat[1, Float::NAN, 3]
+      y = Numo::DFloat[2, 2, Float::NAN]
+      result = NumRuby.fmax(x, y)
+      expected = Numo::DFloat[2, 2, 3]
+      diff = (result - expected).abs
+      expect(diff.max).to be < 1e-12
+    end
   end
 end

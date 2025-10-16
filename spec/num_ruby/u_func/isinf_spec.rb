@@ -81,13 +81,13 @@ RSpec.describe NumRuby::UFunc::Isinf do
       expect(result.to_a).to eq(expected.to_a)
     end
   end
-end
 
-RSpec.describe 'NumRuby.isinf' do
-  it 'delegates to Isinf.call' do
-    x = Numo::DFloat[1.0, Float::INFINITY, Float::NAN]
-    result = NumRuby.isinf(x)
-    expected = Numo::Bit.cast([0, 1, 0])
-    expect(result.to_a).to eq(expected.to_a)
+  describe 'NumRuby.isinf' do
+    it 'delegates to Isinf.call' do
+      x = Numo::DFloat[1.0, Float::INFINITY, Float::NAN]
+      result = NumRuby.isinf(x)
+      expected = Numo::Bit.cast([0, 1, 0])
+      expect(result.to_a).to eq(expected.to_a)
+    end
   end
 end

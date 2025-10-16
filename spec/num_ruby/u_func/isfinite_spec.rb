@@ -67,13 +67,13 @@ RSpec.describe NumRuby::UFunc::Isfinite do
       expect(result.to_a).to eq(expected.to_a)
     end
   end
-end
 
-RSpec.describe 'NumRuby.isfinite' do
-  it 'delegates to Isfinite.call' do
-    x = Numo::DFloat[1.0, Float::NAN, Float::INFINITY]
-    result = NumRuby.isfinite(x)
-    expected = Numo::Bit[1, 0, 0]
-    expect(result.to_a).to eq(expected.to_a)
+  describe 'NumRuby.isfinite' do
+    it 'delegates to Isfinite.call' do
+      x = Numo::DFloat[1.0, Float::NAN, Float::INFINITY]
+      result = NumRuby.isfinite(x)
+      expected = Numo::Bit.cast([1, 0, 0])
+      expect(result.to_a).to eq(expected.to_a)
+    end
   end
 end

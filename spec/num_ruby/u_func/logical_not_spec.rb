@@ -60,13 +60,13 @@ RSpec.describe NumRuby::UFunc::LogicalNot do
       expect(result.to_a).to eq(expected.to_a)
     end
   end
-end
 
-RSpec.describe 'NumRuby.logical_not' do
-  it 'delegates to LogicalNot.call' do
-    x = Numo::DFloat[1, 0, 3]
-    result = NumRuby.logical_not(x)
-    expected = Numo::Bit[0, 1, 0]
-    expect(result.to_a).to eq(expected.to_a)
+  describe 'NumRuby.logical_not' do
+    it 'delegates to LogicalNot.call' do
+      x = Numo::DFloat[1, 0, 3]
+      result = NumRuby.logical_not(x)
+      expected = Numo::Bit.cast([0, 1, 0])
+      expect(result.to_a).to eq(expected.to_a)
+    end
   end
 end

@@ -76,14 +76,14 @@ RSpec.describe NumRuby::UFunc::LogicalOr do
       expect(result.to_a).to eq(expected.to_a)
     end
   end
-end
 
-RSpec.describe 'NumRuby.logical_or' do
-  it 'delegates to LogicalOr.call' do
-    x = Numo::DFloat[1, 0, 2]
-    y = Numo::DFloat[0, 3, 0]
-    result = NumRuby.logical_or(x, y)
-    expected = Numo::Bit.cast([1, 1, 1])
-    expect(result.to_a).to eq(expected.to_a)
+  describe 'NumRuby.logical_or' do
+    it 'delegates to LogicalOr.call' do
+      x = Numo::DFloat[1, 0, 2]
+      y = Numo::DFloat[0, 3, 0]
+      result = NumRuby.logical_or(x, y)
+      expected = Numo::Bit.cast([1, 1, 1])
+      expect(result.to_a).to eq(expected.to_a)
+    end
   end
 end

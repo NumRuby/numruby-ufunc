@@ -60,14 +60,14 @@ RSpec.describe NumRuby::UFunc::GreaterEqual do
       expect(result.to_a).to eq(expected.to_a)
     end
   end
-end
 
-RSpec.describe 'NumRuby.greater_equal' do
-  it 'delegates to GreaterEqual.call' do
-    x = Numo::DFloat[4, 2, 6]
-    y = Numo::DFloat[3, 2, 7]
-    result = NumRuby.greater_equal(x, y)
-    expected = Numo::Bit.cast([1, 1, 0])
-    expect(result.to_a).to eq(expected.to_a)
+  describe 'NumRuby.greater_equal' do
+    it 'delegates to GreaterEqual.call' do
+      x = Numo::DFloat[4, 2, 6]
+      y = Numo::DFloat[3, 2, 7]
+      result = NumRuby.greater_equal(x, y)
+      expected = Numo::Bit.cast([1, 1, 0])
+      expect(result.to_a).to eq(expected.to_a)
+    end
   end
 end

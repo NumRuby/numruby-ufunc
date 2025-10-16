@@ -52,14 +52,14 @@ RSpec.describe NumRuby::UFunc::Equal do
       expect(result.to_a).to eq(expected.to_a)
     end
   end
-end
 
-RSpec.describe 'NumRuby.equal' do
-  it 'delegates to Equal.call' do
-    x = Numo::DFloat[4, 2, 6]
-    y = Numo::DFloat[4, 3, 6]
-    result = NumRuby.equal(x, y)
-    expected = Numo::Bit[1, 0, 1]
-    expect(result.to_a).to eq(expected.to_a)
+  describe 'NumRuby.equal' do
+    it 'delegates to Equal.call' do
+      x = Numo::DFloat[4, 2, 6]
+      y = Numo::DFloat[4, 3, 6]
+      result = NumRuby.equal(x, y)
+      expected = Numo::Bit.cast([1, 0, 1])
+      expect(result.to_a).to eq(expected.to_a)
+    end
   end
 end

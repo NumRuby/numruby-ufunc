@@ -102,15 +102,15 @@ RSpec.describe NumRuby::UFunc::Fmin do
       expect(diff.max).to be < 1e-12
     end
   end
-end
 
-RSpec.describe 'NumRuby.fmin' do
-  it 'delegates to Fmin.call' do
-    x = Numo::DFloat[3, Float::NAN, 1]
-    y = Numo::DFloat[2, 2, Float::NAN]
-    result = NumRuby.fmin(x, y)
-    expected = Numo::DFloat[2, 2, 1]
-    diff = (result - expected).abs
-    expect(diff.max).to be < 1e-12
+  describe 'NumRuby.fmin' do
+    it 'delegates to Fmin.call' do
+      x = Numo::DFloat[3, Float::NAN, 1]
+      y = Numo::DFloat[2, 2, Float::NAN]
+      result = NumRuby.fmin(x, y)
+      expected = Numo::DFloat[2, 2, 1]
+      diff = (result - expected).abs
+      expect(diff.max).to be < 1e-12
+    end
   end
 end

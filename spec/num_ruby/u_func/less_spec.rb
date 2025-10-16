@@ -68,14 +68,14 @@ RSpec.describe NumRuby::UFunc::Less do
       expect(result.to_a).to eq(expected.to_a)
     end
   end
-end
 
-RSpec.describe 'NumRuby.less' do
-  it 'delegates to Less.call' do
-    x = Numo::DFloat[3, 2, 6]
-    y = Numo::DFloat[4, 2, 5]
-    result = NumRuby.less(x, y)
-    expected = Numo::Bit.cast([1, 0, 0])
-    expect(result.to_a).to eq(expected.to_a)
+  describe 'NumRuby.less' do
+    it 'delegates to Less.call' do
+      x = Numo::DFloat[3, 2, 6]
+      y = Numo::DFloat[4, 2, 5]
+      result = NumRuby.less(x, y)
+      expected = Numo::Bit.cast([1, 0, 0])
+      expect(result.to_a).to eq(expected.to_a)
+    end
   end
 end

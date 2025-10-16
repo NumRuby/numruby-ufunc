@@ -60,14 +60,14 @@ RSpec.describe NumRuby::UFunc::LogicalAnd do
       expect(result.to_a).to eq(expected.to_a)
     end
   end
-end
 
-RSpec.describe 'NumRuby.logical_and' do
-  it 'delegates to LogicalAnd.call' do
-    x = Numo::DFloat[1, 0, 2]
-    y = Numo::DFloat[3, 0, 0]
-    result = NumRuby.logical_and(x, y)
-    expected = Numo::Bit[1, 0, 0]
-    expect(result.to_a).to eq(expected.to_a)
+  describe 'NumRuby.logical_and' do
+    it 'delegates to LogicalAnd.call' do
+      x = Numo::DFloat[1, 0, 2]
+      y = Numo::DFloat[3, 0, 0]
+      result = NumRuby.logical_and(x, y)
+      expected = Numo::Bit[1, 0, 0]
+      expect(result.to_a).to eq(expected.to_a)
+    end
   end
 end

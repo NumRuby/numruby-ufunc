@@ -74,13 +74,13 @@ RSpec.describe NumRuby::UFunc::Isnan do
       expect(result.to_a).to eq(expected.to_a)
     end
   end
-end
 
-RSpec.describe 'NumRuby.isnan' do
-  it 'delegates to Isnan.call' do
-    x = Numo::DFloat[1.0, Float::NAN, 2.5]
-    result = NumRuby.isnan(x)
-    expected = Numo::Bit[0, 1, 0]
-    expect(result.to_a).to eq(expected.to_a)
+  describe 'NumRuby.isnan' do
+    it 'delegates to Isnan.call' do
+      x = Numo::DFloat[1.0, Float::NAN, 2.5]
+      result = NumRuby.isnan(x)
+      expected = Numo::Bit[0, 1, 0]
+      expect(result.to_a).to eq(expected.to_a)
+    end
   end
 end

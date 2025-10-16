@@ -85,7 +85,7 @@ RSpec.describe NumRuby::UFunc::LogicalXor do
     end
   end
 
-  describe '.logical_xor' do
+  describe 'NumRuby.logical_xor' do
     it 'delegates to LogicalXor.call' do
       x = Numo::DFloat[1, 0, 2]
       y = Numo::DFloat[3, 0, 0]
