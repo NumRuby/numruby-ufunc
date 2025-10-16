@@ -20,6 +20,7 @@ Naming/MethodParameterName:
   AllowedNames: x, y
 
 Naming/VariableNumber:
+  AllowedIdentifiers: exp2 log2 log10
   EnforcedStyle: snake_case
 
 Style/AsciiComments:
