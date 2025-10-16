@@ -14,7 +14,7 @@ module NumRuby
   module UFunc
     module Maximum
       def self.call(x, y)
-        Numo::DFloat[x.to_a.zip(y.to_a).map { |a, b| a > b ? a : b }]
+        Numo::DFloat[x.to_a.zip(y.to_a).map { |a, b| [a, b].max }]
       end
     end
   end

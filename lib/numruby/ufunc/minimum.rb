@@ -14,7 +14,7 @@ module NumRuby
   module UFunc
     module Minimum
       def self.call(x, y)
-        Numo::DFloat[x.to_a.zip(y.to_a).map { |a, b| a < b ? a : b }]
+        Numo::DFloat[x.to_a.zip(y.to_a).map { |a, b| [a, b].min }]
       end
     end
   end

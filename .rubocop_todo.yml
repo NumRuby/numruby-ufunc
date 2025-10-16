@@ -45,13 +45,6 @@ RSpec/DescribedClass:
 RSpec/SpecFilePathFormat:
   Enabled: false
 
-# Offense count: 2
-# This cop supports unsafe autocorrection (--autocorrect-all).
-Style/MinMaxComparison:
-  Exclude:
-    - "lib/numruby/ufunc/maximum.rb"
-    - "lib/numruby/ufunc/minimum.rb"
-
 # Offense count: 1
 # This cop supports unsafe autocorrection (--autocorrect-all).
 # Configuration parameters: EnforcedStyle.
