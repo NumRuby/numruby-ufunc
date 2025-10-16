@@ -1,7 +1,7 @@
-require "spec_helper"
+require 'spec_helper'
 
 RSpec.describe NumRuby::UFunc::Minimum do
-  it "computes elementwise minimum" do
+  it 'computes elementwise minimum' do
     x = Numo::DFloat[1, 5, 3]
     y = Numo::DFloat[2, 2, 4]
     result = described_class.call(x, y)

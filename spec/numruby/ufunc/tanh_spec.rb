@@ -1,7 +1,7 @@
-require "spec_helper"
+require 'spec_helper'
 
 RSpec.describe NumRuby::UFunc::Tanh do
-  it "computes tanh of array elements" do
+  it 'computes tanh of array elements' do
     x = Numo::DFloat[0, 1, -1]
     result = described_class.call(x)
     expected = Numo::NMath.tanh(x)

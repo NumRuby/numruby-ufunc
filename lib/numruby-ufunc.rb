@@ -1,6 +1,6 @@
-require "numo/narray"
-require_relative "numruby/ufunc/version"
-require_relative "numruby/ufunc/registry"
+require 'numo/narray'
+require_relative 'numruby/ufunc/version'
+require_relative 'numruby/ufunc/registry'
 
 module NumRuby
   module UFunc

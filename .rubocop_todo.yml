@@ -44,10 +44,3 @@ RSpec/DescribedClass:
 # Configuration parameters: CustomTransform, IgnoreMethods, IgnoreMetadata.
 RSpec/SpecFilePathFormat:
   Enabled: false
-
-# Offense count: 70
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle, ConsistentQuotesInMultiline.
-# SupportedStyles: single_quotes, double_quotes
-Style/StringLiterals:
-  Enabled: false

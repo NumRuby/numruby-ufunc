@@ -1,7 +1,7 @@
-require "spec_helper"
+require 'spec_helper'
 
 RSpec.describe NumRuby::UFunc::Exp do
-  it "computes exp of an array correctly" do
+  it 'computes exp of an array correctly' do
     x = Numo::DFloat[0, 1, 2]
     result = described_class.call(x)
     expected = Numo::NMath.exp(x)

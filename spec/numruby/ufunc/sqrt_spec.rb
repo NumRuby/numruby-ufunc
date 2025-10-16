@@ -1,7 +1,7 @@
-require "spec_helper"
+require 'spec_helper'
 
 RSpec.describe NumRuby::UFunc::Sqrt do
-  it "computes sqrt of an array correctly" do
+  it 'computes sqrt of an array correctly' do
     x = Numo::DFloat[0, 1, 4, 9]
     result = described_class.call(x)
     expected = Numo::NMath.sqrt(x)

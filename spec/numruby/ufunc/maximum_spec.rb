@@ -1,7 +1,7 @@
-require "spec_helper"
+require 'spec_helper'
 
 RSpec.describe NumRuby::UFunc::Maximum do
-  it "computes elementwise maximum" do
+  it 'computes elementwise maximum' do
     x = Numo::DFloat[1, 5, 3]
     y = Numo::DFloat[2, 2, 4]
     result = described_class.call(x, y)

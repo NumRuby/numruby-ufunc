@@ -1,7 +1,7 @@
-require "spec_helper"
+require 'spec_helper'
 
 RSpec.describe NumRuby::UFunc::Sin do
-  it "computes sin of an array correctly" do
+  it 'computes sin of an array correctly' do
     x = Numo::DFloat[0, Math::PI / 2, Math::PI]
     result = described_class.call(x)
     expected = Numo::DFloat[0, 1, 0]

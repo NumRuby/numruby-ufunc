@@ -1,6 +1,6 @@
-require "bundler/setup"
-require "numruby/ufunc"
-require "numo/narray"
+require 'bundler/setup'
+require 'numruby/ufunc'
+require 'numo/narray'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

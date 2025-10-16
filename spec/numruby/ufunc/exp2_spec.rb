@@ -1,7 +1,7 @@
-require "spec_helper"
+require 'spec_helper'
 
 RSpec.describe NumRuby::UFunc::Exp2 do
-  it "computes 2^x for array elements" do
+  it 'computes 2^x for array elements' do
     x = Numo::DFloat[0, 1, 3]
     result = described_class.call(x)
     expected = Numo::DFloat[1, 2, 8]
