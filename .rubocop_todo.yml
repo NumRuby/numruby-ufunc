@@ -39,7 +39,6 @@ Naming/VariableNumber:
 RSpec/DescribedClass:
   Exclude:
     - "spec/numruby/ufunc/version_spec.rb"
-    - "spec/numruby_ufunc_spec.rb"
 
 # Offense count: 32
 # Configuration parameters: CustomTransform, IgnoreMethods, IgnoreMetadata.

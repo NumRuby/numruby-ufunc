@@ -4,6 +4,6 @@ RSpec.describe NumRuby::UFunc do
   end
 
   it "responds to .call" do
-    expect(NumRuby::UFunc).to respond_to(:call)
+    expect(described_class).to respond_to(:call)
   end
 end
