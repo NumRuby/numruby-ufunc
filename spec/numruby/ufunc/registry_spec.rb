@@ -7,11 +7,11 @@ RSpec.describe NumRuby::UFunc::Registry do
       log10 maximum minimum multiply pow rint sign sin sinh sqrt subtract tan tanh trunc
     ]
 
-    registered = NumRuby::UFunc::Registry.ufuncs.keys
+    registered = described_class.ufuncs.keys
     expect(registered.sort).to eq(expected.sort)
   end
 
   it 'raises an error for unknown ufunc' do
-    expect { NumRuby::UFunc::Registry.call(:nonexistent, 1, 2) }.to raise_error(ArgumentError)
+    expect { described_class.call(:nonexistent, 1, 2) }.to raise_error(ArgumentError)
   end
 end

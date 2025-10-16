@@ -38,7 +38,6 @@ Naming/VariableNumber:
 # SupportedStyles: described_class, explicit
 RSpec/DescribedClass:
   Exclude:
-    - "spec/numruby/ufunc/registry_spec.rb"
     - "spec/numruby/ufunc/version_spec.rb"
     - "spec/numruby_ufunc_spec.rb"
 
