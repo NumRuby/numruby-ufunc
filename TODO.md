@@ -66,16 +66,16 @@
 | ✅ | `arccos`        | Inverse Cosine                     | Computes the inverse cosine of each element.                                                        |
 | ✅ | `arcsin`        | Inverse Sine                       | Computes the inverse sine of each element.                                                          |
 | ✅ | `arctan`        | Inverse Tangent                    | Computes the inverse tangent of each element.                                                       |
-| [] | `arctan2`       | Two Argument Arctangent            | Computes the angle between the x-axis and the vector (x, y), preserving quadrant information.       |
+| ✅ | `arctan2`       | Two Argument Arctangent            | Computes the angle between the x-axis and the vector (x, y), preserving quadrant information.       |
 | ✅ | `hypot`         | Hypotenuse                         | Computes sqrt(x^2 + y^2) for each pair of elements.                                                 |
 | ✅ | `sinh`          | Hyperbolic Sine                    | Computes the hyperbolic sine of each element.                                                       |
 | ✅ | `cosh`          | Hyperbolic Cosine                  | Computes the hyperbolic cosine of each element.                                                     |
 | ✅ | `tanh`          | Hyperbolic Tangent                 | Computes the hyperbolic tangent of each element.                                                    |
-| [] | `arcsinh`       | Inverse Hyperbolic Sine            | Computes the inverse hyperbolic sine of each element.                                               |
-| [] | `arccosh`       | Inverse Hyperbolic Cosine          | Computes the inverse hyperbolic cosine of each element.                                             |
-| [] | `arctanh`       | Inverse Hyperbolic Tangent         | Computes the inverse hyperbolic tangent of each element.                                            |
+| ✅ | `arcsinh`       | Inverse Hyperbolic Sine            | Computes the inverse hyperbolic sine of each element.                                               |
+| ✅ | `arccosh`       | Inverse Hyperbolic Cosine          | Computes the inverse hyperbolic cosine of each element.                                             |
+| ✅ | `arctanh`       | Inverse Hyperbolic Tangent         | Computes the inverse hyperbolic tangent of each element.                                            |
 | ✅ | `degrees`       | Radians to degrees                 | Converts angles from radians to degrees, element-wise. Equivalent to `x * 180 / π`.                 |
-| [] | `radians`       | Degrees to Radians                 | Converts angles from degrees to radians.                                                            |
+| ✅ | `radians`       | Degrees to Radians                 | Converts angles from degrees to radians.                                                            |
 | ✅ | `deg2rad`       | Degrees to radians                 | Converts angles from degrees to radians, element-wise.                                              |
 | ✅ | `rad2deg`       | Radians to degrees                 | Converts angles from radians to degrees, element-wise.                                              |
 
