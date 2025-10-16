@@ -16,6 +16,9 @@ Layout/HashAlignment:
 Layout/LineLength:
   Max: 125
 
+Naming/MethodParameterName:
+  AllowedNames: x, y
+
 Naming/VariableNumber:
   EnforcedStyle: snake_case
 
