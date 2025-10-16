@@ -74,9 +74,9 @@ RSpec.describe NumRuby::UFunc::BitwiseOr do
     it 'is commutative' do
       x_test = Numo::Int32[5, 12, 9]
       y_test = Numo::Int32[3, 7, 14]
-      result1 = NumRuby.bitwise_or(x_test, y_test)
-      result2 = NumRuby.bitwise_or(y_test, x_test)
-      expect(result1).to eq(result2)
+      result_1 = NumRuby.bitwise_or(x_test, y_test)
+      result_2 = NumRuby.bitwise_or(y_test, x_test)
+      expect(result_1).to eq(result_2)
     end
   end
 end

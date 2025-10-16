@@ -81,16 +81,16 @@ RSpec.describe NumRuby::UFunc::LeftShift do
       x_test = Numo::Int32[1, 3, 5, 7]
 
       # Shift by 1
-      result1 = NumRuby.left_shift(x_test, Numo::Int32[1, 1, 1, 1])
-      expect(result1).to eq(x_test * 2)
+      result_1 = NumRuby.left_shift(x_test, Numo::Int32[1, 1, 1, 1])
+      expect(result_1).to eq(x_test * 2)
 
       # Shift by 2
-      result2 = NumRuby.left_shift(x_test, Numo::Int32[2, 2, 2, 2])
-      expect(result2).to eq(x_test * 4)
+      result_2 = NumRuby.left_shift(x_test, Numo::Int32[2, 2, 2, 2])
+      expect(result_2).to eq(x_test * 4)
 
       # Shift by 3
-      result3 = NumRuby.left_shift(x_test, Numo::Int32[3, 3, 3, 3])
-      expect(result3).to eq(x_test * 8)
+      result_3 = NumRuby.left_shift(x_test, Numo::Int32[3, 3, 3, 3])
+      expect(result_3).to eq(x_test * 8)
     end
 
     it 'handles powers of 2 correctly' do
