@@ -5,9 +5,11 @@
 # Type: Binary
 #
 # Example:
-#   x = Numo::DFloat[1,2,3]
-#   y = Numo::DFloat[4,5,6]
-#   NumRuby::UFunc::Mul.call(x, y)
+#   x = Numo::DFloat[1, 2, 3]
+#   y = Numo::DFloat[4, 5, 6]
+#   NumRuby.mul(x, y)
+#   # => Numo::DFloat[4, 10, 18]
+
 module NumRuby
   module UFunc
     module Mul
@@ -19,3 +21,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:mul, NumRuby::UFunc::Mul)
+
+module NumRuby
+  def self.mul(x, y)
+    UFunc::Mul.call(x, y)
+  end
+end

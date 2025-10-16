@@ -1,13 +1,14 @@
 # NumRuby::UFunc::Ceil
 #
 # Human Name: Ceiling
-# Description: Rounds each element of x up to the nearest integer.
+# Description: Computes the elementwise ceiling of x.
 # Type: Unary
 #
 # Example:
-#   x = Numo::DFloat[1.2, 2.5, -1.7]
-#   NumRuby::UFunc::Ceil.call(x)
-#   # => Numo::DFloat[2,3,-1]
+#   x = Numo::DFloat[1.2, 2.8, -1.7]
+#   NumRuby.ceil(x)
+#   # => Numo::DFloat[2, 3, -1]
+
 module NumRuby
   module UFunc
     module Ceil
@@ -19,3 +20,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:ceil, NumRuby::UFunc::Ceil)
+
+module NumRuby
+  def self.ceil(x)
+    UFunc::Ceil.call(x)
+  end
+end

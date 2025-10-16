@@ -1,12 +1,14 @@
 # NumRuby::UFunc::Sign
 #
 # Human Name: Sign
-# Description: Returns -1, 0, or 1 for each element depending on its sign.
+# Description: Returns the sign of each element in x: -1, 0, or 1.
 # Type: Unary
 #
 # Example:
-#   x = Numo::DFloat[-5,0,7]
-#   NumRuby::UFunc::Sign.call(x)
+#   x = Numo::DFloat[-2, 0, 3]
+#   NumRuby.sign(x)
+#   # => Numo::DFloat[-1, 0, 1]
+
 module NumRuby
   module UFunc
     module Sign
@@ -18,3 +20,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:sign, NumRuby::UFunc::Sign)
+
+module NumRuby
+  def self.sign(x)
+    UFunc::Sign.call(x)
+  end
+end

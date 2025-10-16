@@ -1,12 +1,14 @@
 # NumRuby::UFunc::Log
 #
-# Human Name: Natural Log
-# Description: Computes natural logarithm elementwise on x.
+# Human Name: Natural Logarithm
+# Description: Computes elementwise natural logarithm of x.
 # Type: Unary
 #
 # Example:
 #   x = Numo::DFloat[1, Math::E, Math::E**2]
-#   NumRuby::UFunc::Log.call(x)
+#   NumRuby.log(x)
+#   # => Numo::DFloat[0, 1, 2]
+
 module NumRuby
   module UFunc
     module Log
@@ -18,3 +20,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:log, NumRuby::UFunc::Log)
+
+module NumRuby
+  def self.log(x)
+    UFunc::Log.call(x)
+  end
+end

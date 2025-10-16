@@ -1,12 +1,14 @@
 # NumRuby::UFunc::Tan
 #
 # Human Name: Tangent
-# Description: Computes tangent elementwise on x.
+# Description: Computes elementwise tangent of x.
 # Type: Unary
 #
 # Example:
 #   x = Numo::DFloat[0, Math::PI/4, Math::PI/2]
-#   NumRuby::UFunc::Tan.call(x)
+#   NumRuby.tan(x)
+#   # => Numo::DFloat[0, 1, ∞]
+
 module NumRuby
   module UFunc
     module Tan
@@ -18,3 +20,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:tan, NumRuby::UFunc::Tan)
+
+module NumRuby
+  def self.tan(x)
+    UFunc::Tan.call(x)
+  end
+end

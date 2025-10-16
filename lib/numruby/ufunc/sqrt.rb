@@ -1,12 +1,14 @@
 # NumRuby::UFunc::Sqrt
 #
 # Human Name: Square Root
-# Description: Computes square root elementwise on x.
+# Description: Computes elementwise square root of x.
 # Type: Unary
 #
 # Example:
-#   x = Numo::DFloat[1,4,9]
-#   NumRuby::UFunc::Sqrt.call(x)
+#   x = Numo::DFloat[0, 4, 9]
+#   NumRuby.sqrt(x)
+#   # => Numo::DFloat[0, 2, 3]
+
 module NumRuby
   module UFunc
     module Sqrt
@@ -18,3 +20,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:sqrt, NumRuby::UFunc::Sqrt)
+
+module NumRuby
+  def self.sqrt(x)
+    UFunc::Sqrt.call(x)
+  end
+end

@@ -1,12 +1,14 @@
 # NumRuby::UFunc::Exp
 #
 # Human Name: Exponential
-# Description: Computes e^x elementwise.
+# Description: Computes the elementwise exponential e**x.
 # Type: Unary
 #
 # Example:
-#   x = Numo::DFloat[0,1,2]
-#   NumRuby::UFunc::Exp.call(x)
+#   x = Numo::DFloat[0, 1, 2]
+#   NumRuby.exp(x)
+#   # => Numo::DFloat[1, 2.718, 7.389]
+
 module NumRuby
   module UFunc
     module Exp
@@ -18,3 +20,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:exp, NumRuby::UFunc::Exp)
+
+module NumRuby
+  def self.exp(x)
+    UFunc::Exp.call(x)
+  end
+end

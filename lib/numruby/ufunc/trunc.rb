@@ -1,12 +1,14 @@
 # NumRuby::UFunc::Trunc
 #
 # Human Name: Truncate
-# Description: Truncates each element toward zero.
+# Description: Truncates each element of x toward zero.
 # Type: Unary
 #
 # Example:
-#   x = Numo::DFloat[1.7,-2.3,0]
-#   NumRuby::UFunc::Trunc.call(x)
+#   x = Numo::DFloat[1.7, -2.8, 3.5]
+#   NumRuby.trunc(x)
+#   # => Numo::DFloat[1, -2, 3]
+
 module NumRuby
   module UFunc
     module Trunc
@@ -18,3 +20,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:trunc, NumRuby::UFunc::Trunc)
+
+module NumRuby
+  def self.trunc(x)
+    UFunc::Trunc.call(x)
+  end
+end

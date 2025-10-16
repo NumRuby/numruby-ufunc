@@ -1,13 +1,14 @@
 # NumRuby::UFunc::Abs
 #
 # Human Name: Absolute Value
-# Description: Computes the absolute value of each element in x.
+# Description: Computes the elementwise absolute value of x.
 # Type: Unary
 #
 # Example:
 #   x = Numo::DFloat[-1, -2, 3]
-#   NumRuby::UFunc::Abs.call(x)
-#   # => Numo::DFloat[1,2,3]
+#   NumRuby.abs(x)
+#   # => Numo::DFloat[1, 2, 3]
+
 module NumRuby
   module UFunc
     module Abs
@@ -19,3 +20,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:abs, NumRuby::UFunc::Abs)
+
+module NumRuby
+  def self.abs(x)
+    UFunc::Abs.call(x)
+  end
+end

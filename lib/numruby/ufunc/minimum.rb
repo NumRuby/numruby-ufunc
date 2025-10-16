@@ -5,9 +5,11 @@
 # Type: Binary
 #
 # Example:
-#   x = Numo::DFloat[1,5,3]
-#   y = Numo::DFloat[2,2,4]
-#   NumRuby::UFunc::Minimum.call(x, y)
+#   x = Numo::DFloat[1, 4, 3]
+#   y = Numo::DFloat[2, 2, 5]
+#   NumRuby.minimum(x, y)
+#   # => Numo::DFloat[1, 2, 3]
+
 module NumRuby
   module UFunc
     module Minimum
@@ -19,3 +21,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:minimum, NumRuby::UFunc::Minimum)
+
+module NumRuby
+  def self.minimum(x, y)
+    UFunc::Minimum.call(x, y)
+  end
+end

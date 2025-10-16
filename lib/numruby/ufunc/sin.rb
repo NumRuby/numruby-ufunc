@@ -1,12 +1,14 @@
 # NumRuby::UFunc::Sin
 #
 # Human Name: Sine
-# Description: Computes sine elementwise on x.
+# Description: Computes the elementwise sine of x.
 # Type: Unary
 #
 # Example:
 #   x = Numo::DFloat[0, Math::PI/2, Math::PI]
-#   NumRuby::UFunc::Sin.call(x)
+#   NumRuby.sin(x)
+#   # => Numo::DFloat[0, 1, 0]
+
 module NumRuby
   module UFunc
     module Sin
@@ -18,3 +20,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:sin, NumRuby::UFunc::Sin)
+
+module NumRuby
+  def self.sin(x)
+    UFunc::Sin.call(x)
+  end
+end

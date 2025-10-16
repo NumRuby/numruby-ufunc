@@ -1,13 +1,14 @@
 # NumRuby::UFunc::Floor
 #
 # Human Name: Floor
-# Description: Rounds each element of x down to the nearest integer.
+# Description: Computes the elementwise floor of x.
 # Type: Unary
 #
 # Example:
-#   x = Numo::DFloat[1.9,2.5,-1.7]
-#   NumRuby::UFunc::Floor.call(x)
-#   # => Numo::DFloat[1,2,-2]
+#   x = Numo::DFloat[1.7, 2.8, -1.3]
+#   NumRuby.floor(x)
+#   # => Numo::DFloat[1, 2, -2]
+
 module NumRuby
   module UFunc
     module Floor
@@ -19,3 +20,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:floor, NumRuby::UFunc::Floor)
+
+module NumRuby
+  def self.floor(x)
+    UFunc::Floor.call(x)
+  end
+end

@@ -5,9 +5,11 @@
 # Type: Binary
 #
 # Example:
-#   x = Numo::DFloat[1,5,3]
-#   y = Numo::DFloat[2,2,4]
-#   NumRuby::UFunc::Maximum.call(x, y)
+#   x = Numo::DFloat[1, 4, 3]
+#   y = Numo::DFloat[2, 2, 5]
+#   NumRuby.maximum(x, y)
+#   # => Numo::DFloat[2, 4, 5]
+
 module NumRuby
   module UFunc
     module Maximum
@@ -19,3 +21,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:maximum, NumRuby::UFunc::Maximum)
+
+module NumRuby
+  def self.maximum(x, y)
+    UFunc::Maximum.call(x, y)
+  end
+end

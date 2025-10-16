@@ -5,10 +5,11 @@
 # Type: Binary
 #
 # Example:
-#   x = Numo::DFloat[1,2,3]
-#   y = Numo::DFloat[4,5,6]
-#   NumRuby::UFunc::Add.call(x, y)
-#   # => Numo::DFloat[5,7,9]
+#   x = Numo::DFloat[1, 2, 3]
+#   y = Numo::DFloat[4, 5, 6]
+#   NumRuby.add(x, y)
+#   # => Numo::DFloat[5, 7, 9]
+
 module NumRuby
   module UFunc
     module Add
@@ -19,5 +20,10 @@ module NumRuby
   end
 end
 
-# Register with the central registry
 NumRuby::UFunc::Registry.register(:add, NumRuby::UFunc::Add)
+
+module NumRuby
+  def self.add(x, y)
+    UFunc::Add.call(x, y)
+  end
+end

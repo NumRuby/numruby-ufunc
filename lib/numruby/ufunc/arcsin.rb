@@ -1,12 +1,14 @@
 # NumRuby::UFunc::Arcsin
 #
-# Human Name: Arcsine
-# Description: Computes the inverse sine elementwise on x.
+# Human Name: Arc Sine
+# Description: Computes the elementwise arc sine of x.
 # Type: Unary
 #
 # Example:
-#   x = Numo::DFloat[0, 0.5, 1]
-#   NumRuby::UFunc::Arcsin.call(x)
+#   x = Numo::DFloat[-1, 0, 1]
+#   NumRuby.arcsin(x)
+#   # => Numo::DFloat[-PI/2, 0, PI/2]
+
 module NumRuby
   module UFunc
     module Arcsin
@@ -18,3 +20,9 @@ module NumRuby
 end
 
 NumRuby::UFunc::Registry.register(:arcsin, NumRuby::UFunc::Arcsin)
+
+module NumRuby
+  def self.arcsin(x)
+    UFunc::Arcsin.call(x)
+  end
+end
