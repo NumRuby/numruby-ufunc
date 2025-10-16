@@ -1,7 +1,5 @@
-# frozen_string_literal: true
-
-module Numruby
-  module Ufunc
+module NumRuby
+  module UFunc
     VERSION = '0.1.0'
   end
 end

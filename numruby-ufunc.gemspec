@@ -1,22 +1,21 @@
-# frozen_string_literal: true
-
 require_relative 'lib/numruby/ufunc/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'numruby-ufunc'
-  spec.version = Numruby::Ufunc::VERSION
+  spec.version = NumRuby::UFunc::VERSION
   spec.authors = ['Shane Becker']
   spec.email = ['veganstraightedge@gmail.com']
 
-  spec.summary = 'NumRuby: Central ufunc registry and core elementwise ops'
-  spec.description = 'NumRuby module: Central ufunc registry and core elementwise ops'
-  spec.homepage = 'https://github.com/RubyNum/numruby-ufunc'
-  spec.license = 'BSD-3-Clause'
+  spec.summary     = 'NumRuby universal functions (ufunc) system'
+  spec.description = "Vectorized mathematical operations for NumRuby arrays, similar to NumPy's ufuncs."
+  spec.homepage    = 'https://github.com/RubyNum/numruby-ufunc'
+  spec.license     = 'BSD-3-Clause'
+
   spec.required_ruby_version = '>= 3.4.7'
 
-  spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/RubyNum/numruby-ufunc'
-  spec.metadata['changelog_uri'] = 'https://github.com/RubyNum/numruby-ufunc/blob/main/CHANGELOG.md'
+  spec.metadata['homepage_uri']          = spec.homepage
+  spec.metadata['source_code_uri']       = 'https://github.com/RubyNum/numruby-ufunc'
+  spec.metadata['changelog_uri']         = 'https://github.com/RubyNum/numruby-ufunc/blob/main/CHANGELOG.md'
   spec.metadata['rubygems_mfa_required'] = 'true'
 
   # Specify which files should be added to the gem when it is released.
@@ -33,7 +32,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_dependency 'numo-narray', '>= 0.9.2.1'
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
