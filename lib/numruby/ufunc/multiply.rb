@@ -20,7 +20,7 @@ module NumRuby
   end
 end
 
-NumRuby::UFunc::Registry.register(:mul, NumRuby::UFunc::Multiply)
+NumRuby::UFunc::Registry.register(:multiply, NumRuby::UFunc::Multiply)
 
 module NumRuby
   def self.multiply(x, y)

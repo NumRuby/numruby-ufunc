@@ -1,4 +1,4 @@
-# NumRuby::UFunc::Div
+# NumRuby::UFunc::Divide
 #
 # Human Name: Division
 # Description: Computes elementwise division of x by y.
@@ -7,12 +7,12 @@
 # Example:
 #   x = Numo::DFloat[6, 8, 10]
 #   y = Numo::DFloat[2, 4, 5]
-#   NumRuby.div(x, y)
+#   NumRuby.divide(x, y)
 #   # => Numo::DFloat[3, 2, 2]
 
 module NumRuby
   module UFunc
-    module Div
+    module Divide
       def self.call(x, y)
         x / y
       end
@@ -20,10 +20,10 @@ module NumRuby
   end
 end
 
-NumRuby::UFunc::Registry.register(:div, NumRuby::UFunc::Div)
+NumRuby::UFunc::Registry.register(:divide, NumRuby::UFunc::Divide)
 
 module NumRuby
   def self.div(x, y)
-    UFunc::Div.call(x, y)
+    UFunc::Divide.call(x, y)
   end
 end
