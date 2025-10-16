@@ -17,7 +17,7 @@ module NumRuby
         result = x**(1.0 / 3.0)
 
         # For negative numbers, handle the sign properly
-        negative_mask = x.negative?
+        negative_mask = x < 0
         result[negative_mask] = -((-x[negative_mask])**(1.0 / 3.0))
 
         result
