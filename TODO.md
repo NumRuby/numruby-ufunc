@@ -1,3 +1,5 @@
+
+
 # TODO.md — Proposed Roadmap
 
 ## NumRuby::UFunc Gem
@@ -19,41 +21,40 @@
 | ✅ | `add`           | Addition                           | Adds corresponding elements of two arrays.                                                          |
 | ✅ | `subtract`      | Subtraction                        | Subtracts corresponding elements of two arrays.                                                     |
 | ✅ | `multiply`      | Multiplication                     | Multiplies corresponding elements of two arrays.                                                    |
-| [] | `matmul`        | TODO                               | TODO                                                                                                |
+| [] | `matmul`        | Matrix Multiply                    | Matrix product of two arrays.                                                                       |
 | ✅ | `divide`        | Division                           | Divides corresponding elements of two arrays.                                                       |
-| [] | `logaddexp`     | TODO                               | TODO                                                                                                |
-| [] | `logaddexp2`    | TODO                               | TODO                                                                                                |
+| [] | `logaddexp`     | Log Addition Exponentiations       | Logarithm of the sum of exponentiations of the inputs.                                              |
+| [] | `logaddexp2`    | Log Addition Exponentiations Base2 | Logarithm of the sum of exponentiations of the inputs in base-2.                                    |
 | [] | `true_divide`   | True Division                      | Divides corresponding elements of two arrays, returning float results.                              |
 | [] | `floor_divide`  | Floor Division                     | Divides and floors the result for each element.                                                     |
 | [] | `negative`      | Negation                           | Negates each element.                                                                               |
-| [] | `positive`      | TODO                               | TODO                                                                                                |
+| [] | `positive`      | Positive                           | Numerical positive, element-wise.                                                                   |
 | [] | `power`         | Power                              | Raises elements of one array to the powers of another array element-wise.                           |
-| [] | `float_power`   | TODO                               | TODO                                                                                                |
+| [] | `float_power`   | Float Power                        | First array elements raised to powers from second array, element-wise.                              |
 | [] | `remainder`     | Remainder                          | Computes the remainder of division for each element.                                                |
 | [] | `mod`           | Modulus                            | Computes the remainder of division for each element.                                                |
-| [] | `fmod`          | TODO                               | TODO                                                                                                |
-| [] | `divmod`        | TODO                               | TODO                                                                                                |
+| [] | `fmod`          | Modulus                            | Computes the remainder of division for each element.                                                |
+| [] | `divmod`        | Division Modulus                   | Return element-wise quotient and remainder simultaneously.                                          |
 | ✅ | `absolute`      | Absolute Value                     | Returns the absolute value of each element.                                                         |
-| [] | `fabs`          | TODO                               | TODO                                                                                                |
+| [] | `fabs`          | Absolute Value                     | Compute the absolute values element-wise.                                                           |
 | ✅ | `rint`          | Round to Nearest Integer           | Rounds each element to the nearest integer.                                                         |
 | ✅ | `sign`          | Sign Function                      | Returns -1, 0, or 1 depending on the sign of each element.                                          |
-| [] | `heaviside`     | TODO                               | TODO                                                                                                |
+| [] | `heaviside`     | Heaviside Step Function            | Compute the Heaviside step function.                                                                |
 | [] | `conj`          | Complex Conjugate                  | Returns the complex conjugate of each element.                                                      |
 | [] | `conjugate`     | Complex Conjugate                  | Returns the complex conjugate of each element.                                                      |
 | ✅ | `exp`           | Exponential                        | Computes the exponential (e^x) of each element.                                                     |
 | ✅ | `exp2`          | Base-2 Exponential                 | Computes 2 raised to the power of each element.                                                     |
-| [] | `expm1`         | Exponential Minus One              | Computes e^x - 1 for each element.                                                                  |
 | ✅ | `log`           | Natural Logarithm                  | Computes the natural logarithm (base e) of each element.                                            |
 | ✅ | `log2`          | Base-2 Logarithm                   | Computes the base-2 logarithm of each element.                                                      |
 | ✅ | `log10`         | Base-10 Logarithm                  | Computes the base-10 logarithm of each element.                                                     |
-| [] | `expm1`         | TODO                               | TODO                                                                                                |
+| [] | `expm1`         | Exponential Minus One              | Computes e^x - 1 for each element.                                                                  |
 | [] | `log1p`         | Logarithm of One Plus              | Computes log(1 + x) for each element.                                                               |
 | ✅ | `sqrt`          | Square Root                        | Computes the square root of each element.                                                           |
 | [] | `square`        | Square                             | Computes the square of each element.                                                                |
-| [] | `cbrt`          | TODO                               | TODO                                                                                                |
+| [] | `cbrt`          | Cube Root                          | Computes the cube root of each element.                                                             |
 | [] | `reciprocal`    | Reciprocal                         | Computes the reciprocal (1/x) of each element.                                                      |
-| [] | `gcd`           | TODO                               | TODO                                                                                                |
-| [] | `lcm`           | TODO                               | TODO                                                                                                |
+| [] | `gcd`           | Greatest Common Divisor            | Returns the greatest common divisor of |x1| and |x2|.                                               |
+| [] | `lcm`           | Lowest Common Multiple             | Returns the lowest common multiple of |x1| and |x2|.                                                |
 
 ### Trigonometric functions
 
@@ -65,7 +66,7 @@
 | ✅ | `arccos`        | Inverse Cosine                     | Computes the inverse cosine of each element.                                                        |
 | ✅ | `arcsin`        | Inverse Sine                       | Computes the inverse sine of each element.                                                          |
 | ✅ | `arctan`        | Inverse Tangent                    | Computes the inverse tangent of each element.                                                       |
-| [] | `arctan2`       | TODO                               | TODO                                                                                                |
+| [] | `arctan2`       | Two Argument Arctangent            | Computes the angle between the x-axis and the vector (x, y), preserving quadrant information.       |
 | ✅ | `hypot`         | Hypotenuse                         | Computes sqrt(x^2 + y^2) for each pair of elements.                                                 |
 | ✅ | `sinh`          | Hyperbolic Sine                    | Computes the hyperbolic sine of each element.                                                       |
 | ✅ | `cosh`          | Hyperbolic Cosine                  | Computes the hyperbolic cosine of each element.                                                     |
@@ -73,10 +74,10 @@
 | [] | `arcsinh`       | Inverse Hyperbolic Sine            | Computes the inverse hyperbolic sine of each element.                                               |
 | [] | `arccosh`       | Inverse Hyperbolic Cosine          | Computes the inverse hyperbolic cosine of each element.                                             |
 | [] | `arctanh`       | Inverse Hyperbolic Tangent         | Computes the inverse hyperbolic tangent of each element.                                            |
-| [] | `degrees`       | TODO                               | TODO                                                                                                |
+| ✅ | `degrees`       | Radians to degrees                 | Converts angles from radians to degrees, element-wise. Equivalent to `x * 180 / π`.                 |
 | [] | `radians`       | Degrees to Radians                 | Converts angles from degrees to radians.                                                            |
-| [] | `deg2rad`       | TODO                               | TODO                                                                                                |
-| [] | `rad2deg`       | TODO                               | TODO                                                                                                |
+| ✅ | `deg2rad`       | Degrees to radians                 | Converts angles from degrees to radians, element-wise.                                              |
+| ✅ | `rad2deg`       | Radians to degrees                 | Converts angles from radians to degrees, element-wise.                                              |
 
 ### Bit-twiddling functions
 
@@ -110,18 +111,20 @@
 
 ### Floating functions
 
+| ✅ | Ufunc Name      | Human Name                         | Description                                                                                         |
+| -- | --------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------- |
 | [] | `isfinite`      | Finite Check                       | Checks if each element is finite (not NaN, inf, or -inf).                                           |
 | [] | `isinf`         | Infinite Check                     | Checks if each element is infinite.                                                                 |
 | [] | `isnan`         | NaN Check                          | Checks if each element is NaN.                                                                      |
-| [] | `isnat`         | TODO                               | TODO                                                                                                |
-| [] | `fabs`          | TODO also in Math Operion                               | TODO                                                                           |
+| ✅ | `isnat`         | Is “Not a Time”                    | Returns a boolean array indicating which datetime64 or timedelta64 values are `NaT` (“Not a Time”). |
+| [] | `fabs`          | Absolute Value                     | NOTE: also listed in Math above. Compute the absolute values element-wise.                          |
 | [] | `signbit`       | Sign Bit                           | Checks if the sign bit of each element is set.                                                      |
 | [] | `copysign`      | Copy Sign                          | Copies the sign of one array to another.                                                            |
 | [] | `nextafter`     | Next Floating Point                | Returns the next floating-point value after each element.                                           |
-| [] | `spacing`       | TODO                               | TODO                                                                                                |
-| [] | `modf`          | TODO                               | TODO                                                                                                |
-| [] | `ldexp`         | TODO                               | TODO                                                                                                |
-| [] | `frexp`         | TODO                               | TODO                                                                                                |
+| ✅ | `spacing`       | Floating-point spacing             | Returns the distance between `x` and the next representable floating-point value.                   |
+| ✅ | `modf`          | Fractional and integral parts      | Splits each element into its fractional and integer parts, both with the same sign as the input.    |
+| ✅ | `ldexp`         | Multiply by power of two           | Computes `x * 2**i` element-wise. Used for efficient scaling by powers of two.                      |
+| ✅ | `frexp`         | Fraction and exponent              | Decomposes `x` into mantissa and exponent such that `x = mantissa * 2**exponent`.                   |
 | [] | `frexp`         | Decompose to Mantissa and Exponent | Decomposes each element into mantissa and exponent.                                                 |
 | ✅ | `floor`         | Floor                              | Returns the largest integer less than or equal to each element.                                     |
 | ✅ | `ceil`          | Ceiling                            | Returns the smallest integer greater than or equal to each element.                                 |
