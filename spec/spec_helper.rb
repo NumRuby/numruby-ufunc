@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "numruby-ufunc"
+require "numruby/ufunc"
 require "numo/narray"
 
 RSpec.configure do |config|

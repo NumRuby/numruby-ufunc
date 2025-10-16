@@ -1,14 +1,19 @@
 module NumRuby
   module UFunc
     module Registry
-      def self.call(name, *args)
-        case name
-        when :add
-          args[0] + args[1]
-        when :sin
-          Numo::NMath.sin(args[0])
-        else
-          raise ArgumentError, "Unknown ufunc: #{name}"
+      @ufuncs = {}
+
+      class << self
+        attr_reader :ufuncs
+
+        def register(name, mod)
+          @ufuncs[name.to_sym] = mod
+        end
+
+        def call(name, *args)
+          mod = @ufuncs[name.to_sym]
+          raise ArgumentError, "Unknown ufunc: #{name}" unless mod
+          mod.call(*args)
         end
       end
     end
