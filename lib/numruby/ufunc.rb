@@ -4,7 +4,7 @@ require_relative "ufunc/registry"
 
 # Dynamically require all ufunc definition files
 Dir[File.join(__dir__, "ufunc", "*.rb")].each do |file|
-  next if file.end_with?("version.rb") || file.end_with?("registry.rb") || file.end_with?("delegators.rb")
+  next if file.end_with?("version.rb", "registry.rb", "delegators.rb")
 
   require_relative File.join("ufunc", File.basename(file))
 end

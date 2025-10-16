@@ -34,13 +34,6 @@ Naming/VariableNumber:
 
 # Offense count: 1
 # This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: IncludeActiveSupportAliases.
-Performance/DoubleStartEndWith:
-  Exclude:
-    - "lib/numruby/ufunc.rb"
-
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
 # Configuration parameters: EnforcedStyle.
 # SupportedStyles: be, be_nil
 RSpec/BeNil:
