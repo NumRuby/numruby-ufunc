@@ -33,7 +33,7 @@
 | [] | `mod`           | Modulus                            | Computes the remainder of division for each element.                                                |
 | [] | `fmod`          | TODO                               | TODO                                                                                                |
 | [] | `divmod`        | TODO                               | TODO                                                                                                |
-| ⚠️ | `absolute`      | Absolute Value                     | Returns the absolute value of each element.                                                         |
+| ✅ | `absolute`      | Absolute Value                     | Returns the absolute value of each element.                                                         |
 | [] | `fabs`          | TODO                               | TODO                                                                                                |
 | ⚠️ | `rint`          | Round to Nearest Integer           | Rounds each element to the nearest integer.                                                         |
 | ✅ | `sign`          | Sign Function                      | Returns -1, 0, or 1 depending on the sign of each element.                                          |

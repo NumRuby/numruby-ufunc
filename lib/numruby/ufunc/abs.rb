@@ -1,4 +1,4 @@
-# NumRuby::UFunc::Abs
+# NumRuby::UFunc::Absolute
 #
 # Human Name: Absolute Value
 # Description: Computes the elementwise absolute value of x.
@@ -6,12 +6,12 @@
 #
 # Example:
 #   x = Numo::DFloat[-1, -2, 3]
-#   NumRuby.abs(x)
+#   NumRuby.absolute(x)
 #   # => Numo::DFloat[1, 2, 3]
 
 module NumRuby
   module UFunc
-    module Abs
+    module Absolute
       def self.call(x)
         x.map(&:abs)
       end
@@ -19,10 +19,10 @@ module NumRuby
   end
 end
 
-NumRuby::UFunc::Registry.register(:abs, NumRuby::UFunc::Abs)
+NumRuby::UFunc::Registry.register(:absolute, NumRuby::UFunc::Absolute)
 
 module NumRuby
-  def self.abs(x)
-    UFunc::Abs.call(x)
+  def self.absolute(x)
+    UFunc::Absolute.call(x)
   end
 end
