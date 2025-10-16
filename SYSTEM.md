@@ -2,7 +2,9 @@
 
 ## Purpose
 
-NumRuby aims to bring a Ruby-native scientific computing experience similar to Python’s NumPy. The `UFunc` gem provides a collection of elementwise mathematical operations, while the meta gem (`numruby`) organizes and exposes these operations in a single unified namespace.
+NumRuby aims to bring a Ruby-native scientific computing experience similar to Python’s NumPy.
+The `UFunc` gem provides a collection of elementwise mathematical operations,
+while the meta gem (`numruby`) organizes and exposes these operations in a single unified namespace.
 
 ---
 
@@ -119,7 +121,6 @@ Each ufunc has its own spec file for **self-contained testing**.
                |-------------------|
                | :add   => Add     |
                | :sin   => Sin     |
-               | :mul   => Mul     |
                | ...               |
                +---------+---------+
                          |
@@ -129,16 +130,15 @@ Each ufunc has its own spec file for **self-contained testing**.
           |-----------------------------|
           | Add.rb       | call(x, y)   |
           | Sin.rb       | call(x)      |
-          | Mul.rb       | call(x, y)   |
           | Cos.rb       | call(x)      |
           | ...                         |
           +-----------------------------+
                          |
                          v
-                  +-------------------+
-                  | Numo/Numo::NMath  |
-                  |-------------------|
-                  | Provides low-level|
-                  | numerical ops     |
-                  +-------------------+
+                  +--------------------+
+                  | Numo/Numo::NMath   |
+                  |--------------------|
+                  | Provides low-level |
+                  | numerical ops      |
+                  +--------------------+
 ```
