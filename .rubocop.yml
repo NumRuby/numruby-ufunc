@@ -35,10 +35,6 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
-Style/MixinUsage:
-  Exclude:
-    - script/*
-
 RSpec/ExampleLength:
   Enabled: false
 
