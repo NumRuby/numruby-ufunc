@@ -21,40 +21,40 @@
 | ✅ | `add`           | Addition                           | Adds corresponding elements of two arrays.                                                          |
 | ✅ | `subtract`      | Subtraction                        | Subtracts corresponding elements of two arrays.                                                     |
 | ✅ | `multiply`      | Multiplication                     | Multiplies corresponding elements of two arrays.                                                    |
-| [] | `matmul`        | Matrix Multiply                    | Matrix product of two arrays.                                                                       |
+| ✅ | `matmul`        | Matrix Multiply                    | Matrix product of two arrays.                                                                       |
 | ✅ | `divide`        | Division                           | Divides corresponding elements of two arrays.                                                       |
-| [] | `logaddexp`     | Log Addition Exponentiations       | Logarithm of the sum of exponentiations of the inputs.                                              |
-| [] | `logaddexp2`    | Log Addition Exponentiations Base2 | Logarithm of the sum of exponentiations of the inputs in base-2.                                    |
-| [] | `true_divide`   | True Division                      | Divides corresponding elements of two arrays, returning float results.                              |
-| [] | `floor_divide`  | Floor Division                     | Divides and floors the result for each element.                                                     |
-| [] | `negative`      | Negation                           | Negates each element.                                                                               |
-| [] | `positive`      | Positive                           | Numerical positive, element-wise.                                                                   |
-| [] | `power`         | Power                              | Raises elements of one array to the powers of another array element-wise.                           |
-| [] | `float_power`   | Float Power                        | First array elements raised to powers from second array, element-wise.                              |
-| [] | `remainder`     | Remainder                          | Computes the remainder of division for each element.                                                |
-| [] | `mod`           | Modulus                            | Computes the remainder of division for each element.                                                |
-| [] | `fmod`          | Modulus                            | Computes the remainder of division for each element.                                                |
-| [] | `divmod`        | Division Modulus                   | Return element-wise quotient and remainder simultaneously.                                          |
+| ✅ | `logaddexp`     | Log Addition Exponentiations       | Logarithm of the sum of exponentiations of the inputs.                                              |
+| ✅ | `logaddexp2`    | Log Addition Exponentiations Base2 | Logarithm of the sum of exponentiations of the inputs in base-2.                                    |
+| ✅ | `true_divide`   | True Division                      | Divides corresponding elements of two arrays, returning float results.                              |
+| ✅ | `floor_divide`  | Floor Division                     | Divides and floors the result for each element.                                                     |
+| ✅ | `negative`      | Negation                           | Negates each element.                                                                               |
+| ✅ | `positive`      | Positive                           | Numerical positive, element-wise.                                                                   |
+| ✅ | `power`         | Power                              | Raises elements of one array to the powers of another array element-wise.                           |
+| ✅ | `float_power`   | Float Power                        | First array elements raised to powers from second array, element-wise.                              |
+| ✅ | `remainder`     | Remainder                          | Computes the remainder of division for each element.                                                |
+| ✅ | `mod`           | Modulus                            | Computes the remainder of division for each element.                                                |
+| ✅ | `fmod`          | Modulus                            | Computes the remainder of division for each element.                                                |
+| ✅ | `divmod`        | Division Modulus                   | Return element-wise quotient and remainder simultaneously.                                          |
 | ✅ | `absolute`      | Absolute Value                     | Returns the absolute value of each element.                                                         |
-| [] | `fabs`          | Absolute Value                     | Compute the absolute values element-wise.                                                           |
+| ✅ | `fabs`          | Absolute Value                     | Compute the absolute values element-wise.                                                           |
 | ✅ | `rint`          | Round to Nearest Integer           | Rounds each element to the nearest integer.                                                         |
 | ✅ | `sign`          | Sign Function                      | Returns -1, 0, or 1 depending on the sign of each element.                                          |
-| [] | `heaviside`     | Heaviside Step Function            | Compute the Heaviside step function.                                                                |
-| [] | `conj`          | Complex Conjugate                  | Returns the complex conjugate of each element.                                                      |
-| [] | `conjugate`     | Complex Conjugate                  | Returns the complex conjugate of each element.                                                      |
+| ✅ | `heaviside`     | Heaviside Step Function            | Compute the Heaviside step function.                                                                |
+| ✅ | `conj`          | Complex Conjugate                  | Returns the complex conjugate of each element.                                                      |
+| ✅ | `conjugate`     | Complex Conjugate                  | Returns the complex conjugate of each element.                                                      |
 | ✅ | `exp`           | Exponential                        | Computes the exponential (e^x) of each element.                                                     |
 | ✅ | `exp2`          | Base-2 Exponential                 | Computes 2 raised to the power of each element.                                                     |
 | ✅ | `log`           | Natural Logarithm                  | Computes the natural logarithm (base e) of each element.                                            |
 | ✅ | `log2`          | Base-2 Logarithm                   | Computes the base-2 logarithm of each element.                                                      |
 | ✅ | `log10`         | Base-10 Logarithm                  | Computes the base-10 logarithm of each element.                                                     |
-| [] | `expm1`         | Exponential Minus One              | Computes e^x - 1 for each element.                                                                  |
-| [] | `log1p`         | Logarithm of One Plus              | Computes log(1 + x) for each element.                                                               |
+| ✅ | `expm1`         | Exponential Minus One              | Computes e^x - 1 for each element.                                                                  |
+| ✅ | `log1p`         | Logarithm of One Plus              | Computes log(1 + x) for each element.                                                               |
 | ✅ | `sqrt`          | Square Root                        | Computes the square root of each element.                                                           |
-| [] | `square`        | Square                             | Computes the square of each element.                                                                |
-| [] | `cbrt`          | Cube Root                          | Computes the cube root of each element.                                                             |
-| [] | `reciprocal`    | Reciprocal                         | Computes the reciprocal (1/x) of each element.                                                      |
-| [] | `gcd`           | Greatest Common Divisor            | Returns the greatest common divisor of |x1| and |x2|.                                               |
-| [] | `lcm`           | Lowest Common Multiple             | Returns the lowest common multiple of |x1| and |x2|.                                                |
+| ✅ | `square`        | Square                             | Computes the square of each element.                                                                |
+| ✅ | `cbrt`          | Cube Root                          | Computes the cube root of each element.                                                             |
+| ✅ | `reciprocal`    | Reciprocal                         | Computes the reciprocal (1/x) of each element.                                                      |
+| ✅ | `gcd`           | Greatest Common Divisor            | Returns the greatest common divisor of |x1| and |x2|.                                               |
+| ✅ | `lcm`           | Lowest Common Multiple             | Returns the lowest common multiple of |x1| and |x2|.                                                |
 
 ### Trigonometric functions
 
