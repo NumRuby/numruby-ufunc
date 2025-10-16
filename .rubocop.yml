@@ -1,3 +1,5 @@
+inherit_from: .rubocop_todo.yml
+
 plugins:
   - rubocop-performance
   - rubocop-rake
@@ -23,8 +25,10 @@ Naming/VariableNumber:
   EnforcedStyle: snake_case
   AllowedIdentifiers:
     - exp2
+    - expm1
     - log2
     - log10
+    - logaddexp2
 
 Style/AsciiComments:
   Enabled: false

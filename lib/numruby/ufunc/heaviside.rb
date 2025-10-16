@@ -18,9 +18,9 @@ module NumRuby
 
         # Process each element
         x.flatten.each_with_index do |x_val, i|
-          result.flatten[i] = if x_val > 0
+          result.flatten[i] = if x_val.positive?
                                 1.0
-                              elsif x_val == 0
+                              elsif x_val.zero?
                                 y.flatten[i]
                               else
                                 0.0
