@@ -149,7 +149,7 @@ NumRuby.linalg.inv(matrix)
 
 ---
 
-## Future Enhancements
+### Future Enhancements
 
 - **Vectorized Numo wrapper functions** for binary ops.
 - **Plotting integration** (`numruby-plot`) for quick visualization.
