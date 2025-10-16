@@ -24,9 +24,9 @@ module NumRuby
 
         # Handle infinity cases
         if x.infinite?
-          if x > 0 && y < x
+          if x.positive? && y < x
             return Float::MAX
-          elsif x < 0 && y > x
+          elsif x.negative? && y > x
             return -Float::MAX
           else
             return x
@@ -49,7 +49,7 @@ module NumRuby
 
         if x == 0.0
           Float::MIN
-        elsif x > 0
+        elsif x.positive?
           x + (x * Float::EPSILON / 2)
         else
           x - ((-x) * Float::EPSILON / 2)
@@ -62,7 +62,7 @@ module NumRuby
 
         if x == 0.0
           -Float::MIN
-        elsif x > 0
+        elsif x.positive?
           x - (x * Float::EPSILON / 2)
         else
           x + ((-x) * Float::EPSILON / 2)

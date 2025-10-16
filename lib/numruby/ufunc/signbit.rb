@@ -13,7 +13,7 @@ module NumRuby
   module UFunc
     module Signbit
       def self.call(x)
-        Numo::Bit.cast(x.to_a.map { |a| Math.copysign(1.0, a) < 0 ? 1 : 0 })
+        Numo::Bit.cast(x.to_a.map { |a| Math.copysign(1.0, a).negative? ? 1 : 0 })
       end
     end
   end

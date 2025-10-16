@@ -13,7 +13,7 @@ module NumRuby
   module UFunc
     module LogicalNot
       def self.call(x)
-        Numo::Bit.cast(x.to_a.map { |a| a == 0 ? 1 : 0 })
+        Numo::Bit.cast(x.to_a.map { |a| a.zero? ? 1 : 0 })
       end
     end
   end

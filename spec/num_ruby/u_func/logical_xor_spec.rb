@@ -84,14 +84,14 @@ RSpec.describe NumRuby::UFunc::LogicalXor do
       expect(result.to_a).to eq(expected.to_a)
     end
   end
-end
 
-RSpec.describe 'NumRuby.logical_xor' do
-  it 'delegates to LogicalXor.call' do
-    x = Numo::DFloat[1, 0, 2]
-    y = Numo::DFloat[3, 0, 0]
-    result = NumRuby.logical_xor(x, y)
-    expected = Numo::Bit.cast([0, 0, 1])
-    expect(result.to_a).to eq(expected.to_a)
+  describe '.logical_xor' do
+    it 'delegates to LogicalXor.call' do
+      x = Numo::DFloat[1, 0, 2]
+      y = Numo::DFloat[3, 0, 0]
+      result = NumRuby.logical_xor(x, y)
+      expected = Numo::Bit.cast([0, 0, 1])
+      expect(result.to_a).to eq(expected.to_a)
+    end
   end
 end
