@@ -12,11 +12,10 @@
 # SupportedStyles: described_class, explicit
 RSpec/DescribedClass:
   Exclude:
-    - 'spec/num_ruby/u_func/version_spec.rb'
+    - "spec/num_ruby/u_func/version_spec.rb"
 
 # Offense count: 1
 # Configuration parameters: CustomTransform, IgnoreMethods, IgnoreMetadata.
 RSpec/SpecFilePathFormat:
   Exclude:
-    - '**/spec/routing/**/*'
-    - 'spec/numruby_ufunc_spec.rb'
+    - "spec/numruby_ufunc_spec.rb"
