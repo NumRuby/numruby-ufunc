@@ -1,3 +1,4 @@
+# rubocop:disable RSpec/DescribedClass
 RSpec.describe NumRuby::UFunc::VERSION do
   it 'is a string' do
     expect(NumRuby::UFunc::VERSION).to be_a(String)
@@ -7,3 +8,4 @@ RSpec.describe NumRuby::UFunc::VERSION do
     expect(NumRuby::UFunc::VERSION).to match(/^\d+\.\d+\.\d+$/)
   end
 end
+# rubocop:enable RSpec/DescribedClass
