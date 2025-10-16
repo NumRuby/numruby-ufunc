@@ -1,6 +1,6 @@
 require "spec_helper"
 
-RSpec.describe NumRuby::UFunc::Mul do
+RSpec.describe NumRuby::UFunc::Multiply do
   it "multiplies two arrays correctly" do
     x = Numo::DFloat[1, 2, 3]
     y = Numo::DFloat[4, 5, 6]
