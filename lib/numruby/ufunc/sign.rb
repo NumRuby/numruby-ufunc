@@ -13,7 +13,13 @@ module NumRuby
   module UFunc
     module Sign
       def self.call(x)
-        x.map { |a| a < 0 ? -1 : a > 0 ? 1 : 0 }
+        x.map do |a|
+          if a < 0
+            -1
+          else
+            a > 0 ? 1 : 0
+          end
+        end
       end
     end
   end
