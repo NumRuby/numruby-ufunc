@@ -24,6 +24,7 @@ Naming/MethodParameterName:
 Naming/VariableNumber:
   EnforcedStyle: snake_case
   AllowedIdentifiers:
+    - arctan2
     - exp2
     - expm1
     - log2
