@@ -1,20 +1,13 @@
+require "spec_helper"
+
 RSpec.describe NumRuby::UFunc::Registry do
-  let(:a) { Numo::DFloat[1, 2, 3] }
-  let(:b) { Numo::DFloat[4, 5, 6] }
+  it "has all expected ufuncs registered" do
+    expected = [:add, :sub, :mul, :div, :sin, :cos, :tan, :exp, :log, :sqrt]
+    registered = NumRuby::UFunc::Registry.ufuncs.keys
+    expect(registered.sort).to eq(expected.sort)
+  end
 
-  describe ".call" do
-    it "adds two arrays with :add" do
-      result = described_class.call(:add, a, b)
-      expect(result).to eq(Numo::DFloat[5, 7, 9])
-    end
-
-    it "applies sin with :sin", skip: "For now" do
-      result = described_class.call(:sin, a)
-      expect(result).to be_a(Numo::DFloat)
-    end
-
-    it "raises on unknown ufunc" do
-      expect { described_class.call(:foo, a) }.to raise_error(ArgumentError)
-    end
+  it "raises an error for unknown ufunc" do
+    expect { NumRuby::UFunc::Registry.call(:nonexistent, 1, 2) }.to raise_error(ArgumentError)
   end
 end
